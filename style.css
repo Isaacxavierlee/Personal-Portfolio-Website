@@ -277,6 +277,7 @@ header {
   align-items: center;
   border: 2px solid #00abf0; /* Make sure --main-color is defined */
   overflow: hidden; /* Ensure the image stays within the circle */
+  position: relative; /* Add position relative to the container */
 }
 
 .about-img img {
@@ -285,6 +286,21 @@ header {
   object-fit: cover; /* Maintain aspect ratio and cover the circle */
   border-radius: 50%; /* Set back to 50% for a perfect circle */
 }
+
+.about-img .circle-spin {
+  position: absolute;
+  top: 50%; /* Adjust the vertical positioning as needed */
+  left: 50%; /* Adjust the horizontal positioning as needed */
+  transform: translate(-50%, -50%) rotate(0); /* Center and adjust the transform as needed */
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border-top: .2rem solid red;
+  border-bottom: .2rem solid red;
+  border-left: .2rem solid red;
+  border-right: .2rem solid red;
+}
+
 
 .about-content {
   max-width: 600px;
