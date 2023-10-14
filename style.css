@@ -255,7 +255,7 @@ header {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  background: url('d.jpg');/* Make sure --second-bg-color is defined */
+  background: url('d.jpg'); /* Make sure --second-bg-color is defined */
   padding-bottom: 3rem; /* Adjust the padding as needed */
   background-size: cover;
   background-position: center;
@@ -269,8 +269,8 @@ header {
 }
 
 .about-img {
-  width: 18rem; /* Adjust the size of the circle as needed */
-  height: 18rem; /* Adjust the size of the circle as needed */
+  width: 15rem; /* Adjust the size of the circle as needed */
+  height: 15rem; /* Adjust the size of the circle as needed */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -286,10 +286,10 @@ header {
   border-radius: 50%; /* Set back to 50% for a perfect circle */
 }
 
-
-
 .about-content {
   max-width: 600px;
+  text-align: center; /* Center the content within the max-width container */
+  margin: 0 auto; /* Center the container itself horizontally */
 }
 
 .about-content h1 {
@@ -307,7 +307,7 @@ header {
   height: 100%;
   background: white;
   animation: showRight 1s ease forwards;
-  animation-delay: .1s;
+  animation-delay: 0.1s;
 }
 
 .about-content h3 {
@@ -317,8 +317,10 @@ header {
 }
 
 .about-content p {
+  text-align: left; /* Adjust text alignment as needed, e.g., left, center, or right */
   font-size: 16px;
-  margin: 2rem 0 3rem;
+  margin: 20px 0; /* Adjust the margin as needed */
+  line-height: 1.5; /* Adjust line height as needed for readability */
 }
 
 .about-content p::before {
@@ -330,6 +332,6 @@ header {
   height: 100%;
   background: white;
   animation: showRight 1s ease forwards;
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
