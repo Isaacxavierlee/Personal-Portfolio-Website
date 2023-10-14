@@ -269,37 +269,52 @@ header {
 }
 
 .about-img {
-  width: 15rem; /* Adjust the size of the circle as needed */
-  height: 15rem; /* Adjust the size of the circle as needed */
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
+  border: 4px solid #00abf0; /* Increase the border width */
+  overflow: hidden;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #00abf0; /* Make sure --main-color is defined */
-  overflow: hidden; /* Ensure the image stays within the circle */
-  position: relative; /* Add position relative to the container */
+  transition: border 0.3s ease, transform 0.3s ease; /* Add transition for border and transform */
 }
 
-.about-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and cover the circle */
-  border-radius: 50%; /* Set back to 50% for a perfect circle */
-}
-
-.about-img .circle-spin {
-  position: absolute;
-  top: 50%; /* Adjust the vertical positioning as needed */
-  left: 50%; /* Adjust the horizontal positioning as needed */
-  transform: translate(-50%, -50%) rotate(0); /* Center and adjust the transform as needed */
-  height: 100%;
-  width: 100%;
+.outer-circle {
+  width: 17rem; /* Adjust the size of the outer circle as needed */
+  height: 17rem; /* Adjust the size of the outer circle as needed */
   border-radius: 50%;
-  border-top: .2rem solid red;
-  border-bottom: .2rem solid red;
-  border-left: .2rem solid red;
-  border-right: .2rem solid red;
+  border: 4px solid #fcfcfc; /* Increase the border width for the outer circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 0.3s ease; /* Add transition for border */
 }
+
+.outer-circle:hover {
+  animation: rotateColors 4s linear infinite; /* Create a color rotation animation */
+  transform: scale(1.1); /* Add a scaling effect on hover */
+}
+
+@keyframes rotateColors {
+  0% {
+    border: 6px solid #ff0000; /* Initial border color and width */
+  }
+  25% {
+    border: 6px solid #00ff00; /* Border color at 25% of the animation */
+  }
+  50% {
+    border: 6px solid #0000ff; /* Border color at 50% of the animation */
+  }
+  75% {
+    border: 6px solid #ff00ff; /* Border color at 75% of the animation */
+  }
+  100% {
+    border: 6px solid #ff0000; /* Final border color and width */
+  }
+}
+
 
 
 .about-content {
