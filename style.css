@@ -239,11 +239,97 @@ header {
     width: 0;
   }
 }
-
-.home-imgHover{
-position: absolute;
-top: 0;
-
-
-  
+.home-imgHover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: transparent;
+  transition: 3s;
 }
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: url('d.jpg');/* Make sure --second-bg-color is defined */
+  padding-bottom: 3rem; /* Adjust the padding as needed */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.heading {
+  font-size: 5rem;
+  margin-bottom: 1rem; /* Adjust the margin as needed */
+  text-align: center;
+}
+
+.about-img {
+  width: 18rem; /* Adjust the size of the circle as needed */
+  height: 18rem; /* Adjust the size of the circle as needed */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #00abf0; /* Make sure --main-color is defined */
+  overflow: hidden; /* Ensure the image stays within the circle */
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the circle */
+  border-radius: 50%; /* Set back to 50% for a perfect circle */
+}
+
+
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.about-content h1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  animation: showRight 1s ease forwards;
+  animation-delay: .1s;
+}
+
+.about-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+}
+
+.about-content p {
+  font-size: 16px;
+  margin: 2rem 0 3rem;
+}
+
+.about-content p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  animation: showRight 1s ease forwards;
+  animation-delay: .4s;
+}
+
