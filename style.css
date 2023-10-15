@@ -430,12 +430,25 @@ header {
 }
 
 /* Custom line for each content box */
+/* Add transition and box shadow effects */
 .education-column .education-box {
   border-left: .2rem solid #00abf0;
-  background: transparent; /* Transparent background */
-  border-radius: 10px; /* Add rounded corners */
-  padding: 1rem; /* Add some padding for spacing */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  background: transparent;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* On hover, increase the box shadow for elevation */
+.education-column .education-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translate(0, -3px);
+}
+
+/* Reset the transition when not hovering */
+.education-column .education-box:not(:hover) {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 /* Add spacing and position for content */
