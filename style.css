@@ -378,14 +378,16 @@ header {
 }
 
 .education-column .title {
-  font-size: 2.5rem;
-  margin: 0 0 1.5rem 2rem;
+  font-size: 2rem; /* Reduced font size for the title */
+  margin: 0 0 1rem 2rem; /* Adjusted margin */
   text-align: center; /* Center the title text */
 }
 
-/* To prevent paragraphs from stretching */
+/* Smaller font size for paragraphs */
 .education-content p {
   white-space: normal; /* This wraps text to the container width */
   max-width: 100%; /* Optionally set a maximum width for the paragraphs */
+  font-size: 1.2rem; /* Reduced font size for paragraphs */
 }
+
 
