@@ -352,6 +352,7 @@ header {
   animation: showRight 1s ease forwards;
   animation-delay: 0.4s;
 }
+
 .education {
   display: flex;
   justify-content: center;
@@ -377,17 +378,19 @@ header {
   max-width: 40rem; /* Adjust the max-width as needed */
 }
 
-.education-column .title {
-  font-size: 2rem; /* Reduced font size for the title */
-  margin: 0 0 1rem 2rem; /* Adjusted margin */
-  text-align: center; /* Center the title text */
+.education-column .title, .education-column h3, .education-column p {
+  font-size: 1rem; /* Adjust the font size for title, h3, and p elements */
+  margin: 0; /* Remove margin to make it neater */
+  line-height: 1.4; /* Improve readability with line-height */
 }
 
-/* Smaller font size for paragraphs */
+/* To prevent paragraphs from stretching */
 .education-content p {
   white-space: normal; /* This wraps text to the container width */
   max-width: 100%; /* Optionally set a maximum width for the paragraphs */
-  font-size: 1.2rem; /* Reduced font size for paragraphs */
 }
 
-
+/* To give the icons a blue color */
+.education-column i {
+  color: #00abf0; /* Change to the desired blue color */
+}
