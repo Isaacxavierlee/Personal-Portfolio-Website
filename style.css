@@ -352,21 +352,22 @@ header {
   animation-delay: 0.4s;
 }
 
+/* Base container styles */
 .education {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Change to column to stack title on top */
+  flex-direction: column;
   min-height: auto;
   padding-bottom: 5rem;
   background-image: url('f.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; /* Add relative positioning to the container */
+  position: relative;
 }
 
-/* Create a unique line */
+/* Unique vertical line */
 .education::before {
   content: '';
   position: absolute;
@@ -378,33 +379,68 @@ header {
   z-index: -1; /* Place it behind the content */
 }
 
+/* Education and experience row styles */
 .education .education-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem; /* Increase the gap to add more space between content */
-  justify-content: center; /* Center the columns horizontally */
+  gap: 3rem;
+  justify-content: center;
 }
 
+/* Education and experience column styles */
 .education-row .education-column {
   flex: 1;
-  max-width: 40rem; /* Adjust the max-width as needed */
-  position: relative; /* Add relative positioning to each column */
+  max-width: 40rem;
+  position: relative;
   padding-left: 20px; /* Create space for the line */
 }
 
-.education-column .title, .education-column h3, .education-column p {
-  font-size: 1rem; /* Adjust the font size for title, h3, and p elements */
-  margin: 0; /* Remove margin to make it neater */
-  line-height: 1.4; /* Improve readability with line-height */
+/* Title, heading, and paragraph styles */
+.education-column .title {
+  font-size: 1rem; /* Adjust the font size for the title */
+  margin: 0;
+  line-height: 1.4;
 }
 
-/* To prevent paragraphs from stretching */
+.education-column h3 {
+  font-size: 0.8rem; /* Adjust the font size for h3 elements */
+  margin: 0;
+  line-height: 1.2; /* Adjust the line height */
+  overflow: hidden; /* Prevent h3 from going to the second line */
+  white-space: nowrap; /* Prevent h3 from wrapping */
+  text-overflow: ellipsis; /* Add an ellipsis if the content overflows */
+}
+
+.education-column p {
+  font-size: 0.8rem; /* Adjust the font size for p elements */
+  margin: 5px 0; /* Add margin to provide spacing between h3 and p */
+  line-height: 1.2; /* Adjust the line height */
+  margin-bottom: 10px; /* Add margin for spacing between paragraphs */
+}
+
+/* Prevent paragraphs from stretching */
 .education-content p {
-  white-space: normal; /* This wraps text to the container width */
-  max-width: 100%; /* Optionally set a maximum width for the paragraphs */
+  white-space: normal;
+  max-width: 100%;
 }
 
-/* To give the icons a blue color */
+/* Blue icon color */
 .education-column i {
-  color: #00abf0; /* Change to the desired blue color */
+  color: #00abf0;
 }
+
+/* Custom line for each content box */
+.education-column .education-box {
+  border-left: .2rem solid #00abf0;
+  background: transparent; /* Transparent background */
+  border-radius: 10px; /* Add rounded corners */
+  padding: 1rem; /* Add some padding for spacing */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Add spacing and position for content */
+.education-box .education-content {
+  position: relative;
+  padding-left: 2rem;
+}
+
