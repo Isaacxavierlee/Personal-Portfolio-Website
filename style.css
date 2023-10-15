@@ -130,8 +130,6 @@ header {
 .btn-box {
   display: flex;
   justify-content: space-between;
-  width: 345px;
-  height: 50px;
   margin-top: 20px;
 }
 
@@ -140,8 +138,8 @@ header {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 100%;
+  padding: 0 20px; /* Adjust padding for the desired space around the text */
+  height: 50px;
   background: #00abf0;
   border: 2px solid #00abf0;
   border-radius: 8px;
@@ -182,6 +180,7 @@ header {
   width: 100%;
   border-color: #00abf0;
 }
+
 
 .home-sci {
   position: absolute;
@@ -364,6 +363,19 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative; /* Add relative positioning to the container */
+}
+
+/* Create a unique line */
+.education::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px; /* Adjust the position as needed */
+  width: 4px; /* Adjust the line width as needed */
+  height: 100%;
+  background: #00abf0; /* Change to the desired line color */
+  z-index: -1; /* Place it behind the content */
 }
 
 .education .education-row {
@@ -376,6 +388,8 @@ header {
 .education-row .education-column {
   flex: 1;
   max-width: 40rem; /* Adjust the max-width as needed */
+  position: relative; /* Add relative positioning to each column */
+  padding-left: 20px; /* Create space for the line */
 }
 
 .education-column .title, .education-column h3, .education-column p {
