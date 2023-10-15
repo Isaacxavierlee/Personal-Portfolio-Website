@@ -468,3 +468,152 @@ header {
   text-align: center; /* Center the text horizontally */
 }
 
+/* Main styles for the skills section */
+.skills {
+  min-height: auto;
+  padding: 5rem 0 7rem;
+  background: url('e.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Heading style */
+.skills .heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Row for skill columns */
+.skills .skills-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+/* Individual skill column */
+.skills .skills-column {
+  flex: 1;
+  max-width: 40rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+/* Title for each skill category */
+.skills .title {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Custom skill box with centered content */
+.skills .skills-box {
+  border-left: 0.2rem solid #00abf0;
+  background: transparent;
+  border-radius: 0;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+
+/* Skill category content */
+.skills .skills-content {
+  position: relative;
+}
+
+/* Skill progress style */
+.skills .progress {
+  margin-bottom: 1.5rem; /* Increased spacing between skills */
+}
+
+/* Skill name style */
+.skills .progress h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Skill percentage style */
+.skills .progress span {
+  color: #00abf0;
+  font-weight: bold;
+}
+
+/* Skill progress bar style */
+.skills .bar {
+  height: 2rem;
+  border-radius: 1rem;
+  border: 0.2rem solid #00abf0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between; /* Spaced out the progress bar */
+}
+
+/* Skill progress bar fill style */
+.skills .bar span {
+  display: block;
+  height: 100%;
+  border-radius: 3rem; /* Adjusted border radius */
+  background: #00abf0;
+  transition: width 0.5s; /* Added transition for a smoother effect */
+}
+
+/* Adjusted skill bar widths */
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
+  width: 85%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
+  width: 85%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
+  width: 85%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
+  width: 80%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+  width: 75%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+  width: 75%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span {
+  width: 80%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
+  width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
+  width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+  width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
+  width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
+  width: 90%;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .skills .skills-row {
+    flex-direction: column;
+  }
+}
