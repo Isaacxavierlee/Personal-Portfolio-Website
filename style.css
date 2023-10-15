@@ -352,32 +352,40 @@ header {
   animation: showRight 1s ease forwards;
   animation-delay: 0.4s;
 }
-
-.timeline, .certifications {
+.education {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; /* Change to column to stack title on top */
   min-height: auto;
   padding-bottom: 5rem;
-  background-image: url('your-background-image.jpg'); /* Add your background image URL here */
+  background-image: url('f.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center center;
 }
 
-.timeline .timeline-row, .certifications .timeline-row {
+.education .education-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 3rem; /* Increase the gap to add more space between content */
+  justify-content: center; /* Center the columns horizontally */
 }
 
-.timeline-row .timeline-col, .certifications .timeline-row .timeline-col {
-  flex: 1 1 40rem;
+.education-row .education-column {
+  flex: 1;
+  max-width: 40rem; /* Adjust the max-width as needed */
 }
 
-.timeline-col .title, .certifications .timeline-col .title {
+.education-column .title {
   font-size: 2.5rem;
-  margin: 0 0 1.5rem;
-  color: #fff; /* Set the title text color to white or any other color that works with your background */
+  margin: 0 0 1.5rem 2rem;
+  text-align: center; /* Center the title text */
 }
+
+/* To prevent paragraphs from stretching */
+.education-content p {
+  white-space: normal; /* This wraps text to the container width */
+  max-width: 100%; /* Optionally set a maximum width for the paragraphs */
+}
+
