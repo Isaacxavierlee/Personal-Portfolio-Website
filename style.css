@@ -472,7 +472,7 @@ header {
 .skills {
   min-height: auto;
   padding: 5rem 0 7rem;
-  background: url('e.jpg');
+  background: url('c.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -617,3 +617,4 @@ header {
     flex-direction: column;
   }
 }
+
