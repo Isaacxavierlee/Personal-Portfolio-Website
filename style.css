@@ -7,6 +7,38 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Your existing CSS code */
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust the overall padding for the home section on smaller screens */
+  .home-content {
+    padding: 0 10px;
+  }
+
+  /* Increase spacing between buttons and icons in the home section */
+  .btn-box {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    margin-top: 20px;
+  }
+
+  .btn-box a {
+    margin-bottom: 10px; /* Add space between buttons */
+  }
+
+  .home-sci {
+    bottom: 20px; /* Adjust the position of social icons on small screens */
+  }
+
+  .home-imgHover {
+    display: none; /* Hide the image on small screens for better visibility */
+  }
+}
+
+/* The rest of your CSS remains unchanged */
+
+
+
 body {
   color: #ededed;
 }
