@@ -7,43 +7,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Your existing CSS code */
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  /* Adjust the overall padding for the home section on smaller screens */
-  .home-content {
-    padding: 0 10px;
-  }
-
-  /* Increase spacing between buttons and icons in the home section */
-  .btn-box {
-    flex-direction: column; /* Stack buttons vertically on small screens */
-    margin-top: 20px;
-  }
-
-  .btn-box a {
-    margin-bottom: 10px; /* Add space between buttons */
-  }
-
-  .home-sci {
-    bottom: 20px; /* Adjust the position of social icons on small screens */
-  }
-
-  .home-imgHover {
-    display: none; /* Hide the image on small screens for better visibility */
-  }
-
-  /* Make the .home and .about sections take up the full screen height */
-  .home,
-  .about {
-    height: 100vh;
-  }
-}
-
-
-
-
 body {
   color: #ededed;
 }
@@ -655,3 +618,68 @@ header {
   }
 }
 
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  /* Adjustments for mobile devices */
+  header {
+    padding: 10px 5%; /* Reduce padding for small screens */
+  }
+
+  .home-content {
+    padding: 0 5%; /* Reduce padding for small screens */
+  }
+
+  .home-content h1,
+  .home-content h3 {
+    font-size: 36px; /* Decrease font size for smaller screens */
+  }
+
+  .home-content p {
+    font-size: 16px; /* Decrease font size for smaller screens */
+    margin: 10px 0 20px; /* Adjust the margin as needed */
+  }
+
+  .btn-box {
+       gap: 10px; /* Increase spacing between buttons */
+  }
+
+  .home-sci {
+    bottom: 5px; /* Adjust the position of social icons on small screens */
+  }
+
+  /* Ensure the background image covers the entire screen */
+  .home {
+    background-size: 100% 100%;
+  }
+
+  .home-imgHover {
+    display: none; /* Hide the image on small screens for better visibility */
+  }
+
+  /* Make the .home and .about sections take up the full screen height */
+  .home,
+  .about {
+    height: 100vh;
+  }
+
+  /* Center the content in the about section */
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content h1,
+  .about-content h3 {
+    font-size: 36px; /* Decrease font size for smaller screens */
+  }
+
+  .about-content p {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+
+  /* Adjust the .about-img size and spacing */
+  .about-img {
+    width: 12rem;
+    height: 12rem;
+    margin: 1rem 0;
+  }
+}
