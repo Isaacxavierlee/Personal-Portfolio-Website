@@ -33,9 +33,14 @@
   .home-imgHover {
     display: none; /* Hide the image on small screens for better visibility */
   }
+
+  /* Make the .home and .about sections take up the full screen height */
+  .home,
+  .about {
+    height: 100vh;
+  }
 }
 
-/* The rest of your CSS remains unchanged */
 
 
 
